@@ -3,16 +3,31 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.3.3",
+    "axios": "^0.21.1",
+    "google-spreadsheet": "^3.1.15",
     "next": "latest",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.12.2",
+    "tailwindcss": "^2.2.4"
   },
   "devDependencies": {
+    "@next/eslint-plugin-next": "^11.1.0",
     "autoprefixer": "^10.2.6",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-next": "*",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "postcss": "^8.3.5",
-    "tailwindcss": "^2.2.4"
+    "prettier": "^2.3.2"
   }
 }
