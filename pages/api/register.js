@@ -1,8 +1,8 @@
 import { writeToSheet } from "../../utils/writeToSheet"
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
   if (req.method === "POST") {
-    writeToSheet(req.body)
+    await writeToSheet(req.body)
     res.statusCode = 200
     res.json({
       code: 200,
