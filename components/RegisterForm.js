@@ -79,7 +79,7 @@ const RegisterForm = () => {
                           key={p.id}
                           className="relative grid grid-cols-1 gap-y-4 gap-x-4 my-4 sm:grid-cols-6 first:border-none bg-white shadow px-4 py-6 sm:px-6 rounded-md"
                         >
-                          <div className="hidden sm:block absolute top-0 right-0 pt-3 pr-3">
+                          <div className="absolute top-0 right-0 pt-3 pr-3">
                             <XIcon
                               width="4"
                               height="4"
