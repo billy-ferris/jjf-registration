@@ -26,7 +26,7 @@ const validationSchema = yup.object().shape({
 })
 
 const RegisterForm = () => {
-  const [isOpen, setOpen] = useState(false)
+  const [isOpen, setOpen] = useState(true)
 
   return (
     <>

@@ -11,7 +11,7 @@ const SuccessModal = ({ isOpen, setOpen }) => (
           className="fixed z-10 inset-0 overflow-y-auto"
           onClose={setOpen}
         >
-          <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+          <div className="flex items-center justify-center min-h-screen py-8 px-4 text-center sm:block sm:p-0">
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
@@ -24,7 +24,6 @@ const SuccessModal = ({ isOpen, setOpen }) => (
               <Dialog.Overlay className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
             </Transition.Child>
 
-            {/* This element is to trick the browser into centering the modal contents. */}
             <span
               className="hidden sm:inline-block sm:align-middle sm:h-screen"
               aria-hidden="true"
@@ -43,10 +42,18 @@ const SuccessModal = ({ isOpen, setOpen }) => (
               <div className="inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
                 <div>
                   <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100">
-                    {/* <CheckIcon
-                      className="h-6 w-6 text-green-600"
-                      aria-hidden="true"
-                    /> */}
+                    <svg
+                      className="h-7 w-7 text-green-600"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
                   </div>
                   <div className="mt-3 text-center sm:mt-5">
                     <Dialog.Title
