@@ -1,6 +1,4 @@
-/* eslint-disable react/react-in-jsx-scope */
 import Head from "next/head"
-// import Registration from "../components/Registration"
 import ArrayForm from "../components/FieldArrayForm"
 
 export default function Home() {
@@ -12,7 +10,6 @@ export default function Home() {
       </Head>
 
       <main className="m-auto">
-        {/* <Registration /> */}
         <ArrayForm />
       </main>
     </div>

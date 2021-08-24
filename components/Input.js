@@ -5,25 +5,24 @@ const Input = ({
   type,
   required,
   label,
-  colSpan = "6",
+  placeholder,
+  colSpan = "*",
   form: { errors },
 }) => {
   const errorMessage = getIn(errors, field.name)
 
   return (
-    <div className={colSpan && `sm:col-span-${colSpan}`}>
-      <label
-        htmlFor={field.name}
-        className="block text-sm font-medium text-gray-700"
-      >
+    <div className={`col-span-3 sm:col-span-${colSpan}`}>
+      <label htmlFor={field.name} className="block text-sm text-gray-700">
         {label}
       </label>
       <div className="mt-1">
         <input
           {...field}
           type={type}
-          className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+          className="shadow-sm transition duration-300 ease-in-out focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
           required={required}
+          placeholder={placeholder}
         />
         {errorMessage && (
           <p className="mt-2 text-sm text-red-600">{errorMessage}</p>
