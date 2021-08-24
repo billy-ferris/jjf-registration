@@ -11,7 +11,7 @@ const SuccessModal = ({ isOpen, setOpen }) => (
           className="fixed z-10 inset-0 overflow-y-auto"
           onClose={setOpen}
         >
-          <div className="flex items-center justify-center min-h-screen py-8 px-4 text-center sm:block sm:p-0">
+          <div className="flex items-center justify-center min-h-screen p-4 text-center sm:block sm:p-0">
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
@@ -39,7 +39,7 @@ const SuccessModal = ({ isOpen, setOpen }) => (
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <div className="inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
+              <div className="inline-block align-bottom bg-white rounded-lg px-4 py-6 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
                 <div>
                   <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100">
                     <svg
