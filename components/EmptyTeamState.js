@@ -1,8 +1,5 @@
 const EmptyTeamState = ({ onClick }) => (
-  <div
-    type="button"
-    className="relative block mt-6 w-full bg-gray-50 border-2 border-gray-300 border-dashed rounded-lg p-8 text-center"
-  >
+  <div className="relative block mt-6 w-full border-2 border-gray-300 border-dashed rounded-lg p-8 text-center">
     <svg
       className="mx-auto h-12 w-12 text-gray-400"
       fill="none"
