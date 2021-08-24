@@ -11,6 +11,7 @@ import XIcon from "./XIcon"
 import EmptyTeamState from "./EmptyTeamState"
 import AddMemberButton from "./AddMemberButton"
 import SuccessModal from "./SuccessModal"
+import FormHeader from "./FormHeader"
 
 const validationSchema = yup.object().shape({
   members: yup.array().of(
@@ -24,28 +25,17 @@ const validationSchema = yup.object().shape({
   team: yup.string(),
 })
 
-const ArrayForm = () => {
+const RegisterForm = () => {
   const [isOpen, setOpen] = useState(false)
 
   return (
     <>
       <SuccessModal isOpen={isOpen} setOpen={setOpen} />
       <div className="w-full space-y-6 max-w-2xl mx-auto pt-12 pb-16 px-4 sm:px-6 lg:px-8">
-        <div>
-          <img
-            className="mx-auto h-12 w-auto"
-            src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-            alt="Workflow"
-          />
-        </div>
-        <div className="text-center">
-          <h3 className="text-lg leading-6 font-medium text-gray-900">
-            Register your team
-          </h3>
-          <p className="mt-1 text-sm text-gray-500">
-            Please provide your team name and team members information.
-          </p>
-        </div>
+        <FormHeader
+          title="Register your team"
+          text="Please provide your team name and team members information."
+        />
         <Formik
           initialValues={{
             members: [],
@@ -178,4 +168,4 @@ const ArrayForm = () => {
   )
 }
 
-export default ArrayForm
+export default RegisterForm

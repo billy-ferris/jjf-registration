@@ -1,5 +1,5 @@
 import Head from "next/head"
-import ArrayForm from "../components/FieldArrayForm"
+import RegisterForm from "../components/RegisterForm"
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
       </Head>
 
       <main className="m-auto">
-        <ArrayForm />
+        <RegisterForm />
       </main>
     </div>
   )
