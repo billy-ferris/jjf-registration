@@ -45,17 +45,19 @@ const RegisterForm = () => {
             axios
               .post("/api/register", values)
               .then(async (res) => {
+                console.log(res)
                 if (res.status === 200) {
                   await setOpen(true)
                   resetForm()
+                } else {
+                  throw Error("Something went wrong")
                 }
-                console.log(res)
               })
               .catch((error) => {
                 // eslint-disable-next-line no-alert
                 alert("Something went wrong. Please try again later.")
                 // eslint-disable-next-line no-console
-                console.log(error)
+                console.error(error)
               })
           }}
           validationSchema={validationSchema}

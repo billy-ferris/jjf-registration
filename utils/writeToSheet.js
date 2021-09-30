@@ -15,8 +15,9 @@ export const writeToSheet = async (body) => {
 
   try {
     await doc.loadInfo()
-    const sheet = await doc.sheetsById[sheetId]
-    await sheet.addRows(rows)
+    const sheet = doc.sheetsById[sheetId]
+    const res = await sheet.addRows(rows)
+    return res
   } catch (err) {
     console.error("Error: ", err)
   }
