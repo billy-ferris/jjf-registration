@@ -34,7 +34,7 @@ const RegisterForm = () => {
       <div className="w-full space-y-6 max-w-2xl mx-auto pt-12 pb-16 px-4 sm:px-6 lg:px-8">
         <FormHeader
           title="Register your team"
-          text="Please provide your team name and team members information."
+          text="Please provide your team name and team member's information."
         />
         <Formik
           initialValues={{
